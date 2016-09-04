@@ -1,0 +1,3 @@
+package: github.com/boyvinall/rice-example
+import:
+- package: github.com/GeertJohan/go.rice

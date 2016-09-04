@@ -1,0 +1,12 @@
+hash: f77b092592fdf209110c55901f431ee50582f1304341f41f4c21206ff21f0669
+updated: 2016-09-04T13:29:38.069145402+01:00
+imports:
+- name: github.com/daaku/go.zipexe
+  version: a5fe2436ffcb3236e175e5149162b41cd28bd27d
+- name: github.com/GeertJohan/go.rice
+  version: 9fdfd46f9806a9228aae341d65ab75c5235c383c
+  subpackages:
+  - embedded
+- name: github.com/kardianos/osext
+  version: c2c54e542fb797ad986b31721e1baedf214ca413
+devImports: []
