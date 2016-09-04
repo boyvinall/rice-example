@@ -8,6 +8,10 @@ import (
 	rice "github.com/GeertJohan/go.rice"
 )
 
+func bob(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "bob\n%s", r.UserAgent())
+}
+
 func main() {
 	conf := rice.Config{
 		LocateOrder: []rice.LocateMethod{rice.LocateAppended},
@@ -17,6 +21,7 @@ func main() {
 		log.Fatalf("error opening rice.Box: %s\n", err)
 	}
 
+	http.HandleFunc("/bob", bob)
 	http.Handle("/", http.FileServer(box.HTTPBox()))
 	go func() {
 		fmt.Println("Serving files on :8080, press ctrl-C to exit")

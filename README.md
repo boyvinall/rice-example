@@ -6,7 +6,7 @@ Things to note about go.rice:
   have the user of that binary append their own html/css/js files
 - Love the way that `append` scans the binary and only appends the
   directories which are actually referenced .. try adding other directories
-  with assets and check the output of `unzip -l` after re-making the binary.
+  with assets and check the output of `unzip -l` after re-making the binary
 - `append` is efficient for compiling/serving a large set of files ..
   the files are zipped thereby not bloating the binary unnecessarily, and
   you don't have to "compile" all those assets
